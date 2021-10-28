@@ -1,0 +1,143 @@
+/* li{
+    background-color: red;
+    margin-bottom: 10px;
+    color:white;
+    font-weight: bold;
+} */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+}
+.container span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color:white;
+    border-radius: 50%;
+    font-size: 3rem;
+    margin: 0 20px; 
+}
+.container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    border:none;
+    background-color: gray;
+    color:white;
+}
+
+.container button:hover{
+    background-color: dodgerblue;
+    color:white;
+}
+.container p{
+    margin-top: 40px;
+}
+.header{
+    background-color: dodgerblue;
+    color:white;
+    font-weight: 600;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 100px;
+}
+
+.reset-btn{
+    margin-top:40px;
+}
+
+.reset-btn button:hover{
+    background-color: red;
+}
+.reset-btn button{
+    border:none;
+}
+
+.footer{
+    background-color: black;
+    color:red;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 100px;
+}
+
+.footer b{
+    color:white;
+}
+
+.todo-app .header{
+    margin-bottom: 0;
+}
+
+.todo-app .new-todo{
+    padding: 5px;
+}
+
+.todo-app .new-todo form{
+    display:grid;
+    grid-template-columns: 11fr 2fr;
+    grid-gap: 10px;
+    min-height: 30px;
+}
+
+.todo-app .new-todo form input{
+    padding-left: 20px;
+}
+.Item{
+    border-left: 5px solid dodgerblue;
+    padding: 10px 5px 10px 10px;
+    margin-bottom: 10px;
+    background-color: #d3d3d349;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.todos{
+    padding: 10px;
+    list-style: none;
+}
+
+.Item button{
+    height: 30px;
+    width:30px;
+    border:none;
+    font-weight: 600;
+    background-color: rgb(252, 5, 5);
+    color:white;
+}
+
+.Item.completed{
+    border-left: green 5px solid;
+    
+}
+.Item span{
+    cursor: pointer;
+    user-select: none;
+}
+.Item.completed span{
+    color:gray;
+    text-decoration: line-through;
+}
+.about{
+    text-align: center;
+}
